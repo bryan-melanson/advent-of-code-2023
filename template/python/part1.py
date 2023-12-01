@@ -1,4 +1,4 @@
-from time import time
+import time
 
 
 def part1(x):
@@ -7,8 +7,8 @@ def part1(x):
 
 
 test_val = 0
-if part1("test") == test_val:
-    start_time = time()
+if part1("test1") == test_val:
+    start_time = time.time()
     print('Solution is {}'.format(part1("input")))
     print("--- %s seconds ---" % (time.time() - start_time))
 else:
