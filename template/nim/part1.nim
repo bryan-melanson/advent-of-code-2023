@@ -9,5 +9,5 @@ proc solution(path: string): int =
 let TEST = 0
 
 proc part1*() =
-    if (solution("test") == TEST):
+    if (solution("test1") == TEST):
         echo solution("input")
