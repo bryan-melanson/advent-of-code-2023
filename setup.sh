@@ -19,7 +19,7 @@ select dir in python rust go zig nim; do
 	break
 done
 
-read -p "Enter the day number to set up the files:" day
+read -p "Enter the day number to set up the files: " day
 
 if [[ $day -eq 0 || $day -gt 25 ]]; then
 	echo -e "${RED}Enter a number between 1 and 25${NC}"

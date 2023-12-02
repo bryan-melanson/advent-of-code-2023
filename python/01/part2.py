@@ -19,6 +19,7 @@ In this example, the calibration values are 29, 83, 13, 24, 42, 14, and 76. Addi
 What is the sum of all of the calibration values?
 '''
 
+
 def find_number(line, nums):
     for i in range(len(line)):
         if '0' <= line[i] <= '9':
@@ -28,20 +29,21 @@ def find_number(line, nums):
                 c = j + 1 + ord('0')
                 return nums[c]
 
+
 def part2(x):
     with open(x, "r") as f:
         total = 0
         numbers = {
-            "one": 1, 
-            "two": 2, 
-            "three": 3, 
-            "four": 4, 
-            "five": 5, 
-            "six": 6, 
-            "seven": 7, 
-            "eight": 8, 
+            "one": 1,
+            "two": 2,
+            "three": 3,
+            "four": 4,
+            "five": 5,
+            "six": 6,
+            "seven": 7,
+            "eight": 8,
             "nine": 9
-        }   
+        }
         for line in f.read().splitlines():
             number = 0
             c = find_number(line, numbers)
@@ -53,6 +55,7 @@ def part2(x):
     return total
 
 # --- 0.0035772323608398438 seconds ---
+
 
 test_val = 281
 if part2("test2") == test_val:
