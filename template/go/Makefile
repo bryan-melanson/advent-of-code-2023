@@ -1,10 +1,9 @@
-.PHONY: all build run clean
+.PHONY: all clean
 
-all: build
+SOURCES := main.go part1.go part2.go
+OUTPUT := main
 
-build:
-	go build -o main main.go part1.go part2.go
-	./main
+all: $(OUTPUT)
 
-clean:
-	rm -f main
+$(OUTPUT): $(SOURCES)
+	go run $(SOURCES)
