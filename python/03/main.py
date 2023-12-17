@@ -22,3 +22,5 @@ if part2("data/test2") == test2_val:
 else:
    print("Test 2 failed")
    exit(1)
+
+# --- 0.019748687744140625 seconds ---
